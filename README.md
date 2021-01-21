@@ -6,3 +6,13 @@ Terraform component stands up a self-hosted Azure Data Factory integration runti
 * [Azure VM extension schema for Windows custom scripts](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-windows)
 * [Create and configure a self-hosted integration runtime](https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime#setting-up-a-self-hosted-integration-runtime)
 * [Create self host IR and make it workable in azure VMs](https://github.com/Azure/azure-quickstart-templates/tree/master/101-vms-with-selfhost-integration-runtime)
+
+## Alternative using combination az cli and ARM template
+```bash
+az deployment group create  \
+    --resource-group self-hosted-adf-ir-poc \
+    --name rollout01 \
+    --template-uri https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/101-vms-with-selfhost-integration-runtime/azuredeploy.json \
+    --parameters @azuredeploy.parameters.json
+```
+Note: this approach requires prerequisite resources. Inspect `azuredeploy.parameters.json` for more detail.
