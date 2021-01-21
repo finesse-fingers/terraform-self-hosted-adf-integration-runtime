@@ -19,7 +19,7 @@ terraform destroy -auto-approve
 * [Create and configure a self-hosted integration runtime](https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime#setting-up-a-self-hosted-integration-runtime)
 * [Create self host IR and make it workable in azure VMs](https://github.com/Azure/azure-quickstart-templates/tree/master/101-vms-with-selfhost-integration-runtime)
 
-## Alternative using combination az cli and ARM template
+## Alternative using combination of az cli and ARM template
 ```bash
 az deployment group create  \
     --resource-group self-hosted-adf-ir-poc \
