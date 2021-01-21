@@ -2,10 +2,10 @@
 Terraform component stands up a self-hosted Azure Data Factory integration runtime on an Azure VM
 
 ## Getting started
-Simply run terraform init and apply
+Simply run terraform plan and apply
 ```bash
 terraform init
-terraform apply -auto-approve
+terraform plan && terraform apply -auto-approve
 ```
 
 ## Cleanup
