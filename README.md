@@ -13,12 +13,6 @@ terraform plan && terraform apply -auto-approve
 terraform destroy -auto-approve
 ```
 
-## Useful links
-* [Using terraform with Azure VM extensions](https://jackstromberg.com/2018/11/using-terraform-with-azure-vm-extensions/)
-* [Azure VM extension schema for Windows custom scripts](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-windows)
-* [Create and configure a self-hosted integration runtime](https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime#setting-up-a-self-hosted-integration-runtime)
-* [Create self host IR and make it workable in azure VMs](https://github.com/Azure/azure-quickstart-templates/tree/master/101-vms-with-selfhost-integration-runtime)
-
 ## Alternative using combination of az cli and ARM template
 ```bash
 az deployment group create  \
@@ -28,3 +22,9 @@ az deployment group create  \
     --parameters @azuredeploy.parameters.json
 ```
 Note: this approach requires prerequisite resources. Inspect `azuredeploy.parameters.json` for more detail.
+
+## References
+* [Using terraform with Azure VM extensions](https://jackstromberg.com/2018/11/using-terraform-with-azure-vm-extensions/)
+* [Azure VM extension schema for Windows custom scripts](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-windows)
+* [Create and configure a self-hosted integration runtime](https://docs.microsoft.com/en-us/azure/data-factory/create-self-hosted-integration-runtime#setting-up-a-self-hosted-integration-runtime)
+* [Create self host IR and make it workable in azure VMs](https://github.com/Azure/azure-quickstart-templates/tree/master/101-vms-with-selfhost-integration-runtime)
