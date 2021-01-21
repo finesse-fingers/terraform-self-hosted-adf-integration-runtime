@@ -1,0 +1,39 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "existingDataFactoryName": {
+      "value": "adf-demo-01"
+    },
+    "existingDataFactoryResourceGroup": {
+      "value": "self-hosted-adf-ir-poc"
+    },
+    "existingDataFactoryVersion": {
+      "value": "V2"
+    },
+    "IntegrationRuntimeName": {
+      "value": "adf-shir-02"
+    },
+    "NodeCount": {
+      "value": 2
+    },
+    "adminUserName": {
+      "value": "adminuser"
+    },
+    "adminPassword": {
+      "value": "K8SZpmP6vMstCRSb"
+    },
+    "existingVirtualNetworkName": {
+      "value": "example-network"
+    },
+    "existingVnetResourceGroupName": {
+      "value": "self-hosted-adf-ir-poc"
+    },
+    "existingSubnetInYourVnet": {
+      "value": "default"
+    },
+    "existingVnetLocation": {
+      "value": "australiasoutheast"
+    }
+  }
+}
