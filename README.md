@@ -1,6 +1,18 @@
 # terraform-self-hosted-adf-integration-runtime
 Terraform component stands up a self-hosted Azure Data Factory integration runtime on an Azure VM
 
+## Getting started
+Simply run terraform init and apply
+```bash
+terraform init
+terraform apply -auto-approve
+```
+
+## Cleanup
+```bash
+terraform destroy -auto-approve
+```
+
 ## Useful links
 * [Using terraform with Azure VM extensions](https://jackstromberg.com/2018/11/using-terraform-with-azure-vm-extensions/)
 * [Azure VM extension schema for Windows custom scripts](https://docs.microsoft.com/en-us/azure/virtual-machines/extensions/custom-script-windows)
